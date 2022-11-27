@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+  <title>SuperTeste</title>
+   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../css/estilo.css">
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="../js/funcoes.js"></script>
+  
+   
+</head>
+<body>
+
+  <div class="barrasuperior">
+  </div> 
+  <h1 id="qual">Qual super soldado você seria?</h1>
+
+
+
+<div class="conteiner-01"> 
+  <h2 id="titlesoro">Soro de super soldado<p class="oque-seria">(Oque é?)</p></h2>
+  <div class="dropdown">
+    <h3 id="sub-title01">Todos os personagens que está neste site foram inteiramente baseados somente naqueles que tomaram o soro de super soldado revelado nas telas dos cinemas.</h3> 
+    <br>
+    <p>O soro do super soldado original foi criado pelo cientista Abraham Erskine, que escolheu Steve Rogers para ser o soldado do experimento, aonde que o recebeu com base em seu corpo esquelético e grande força de caráter. Erskine enfatizou que seu soro melhorava não apenas o corpo, mas também a mente:
+    <br>
+    <br>
+    <p id="coment">&nbsp &nbsp &nbsp &nbsp“O soro amplifica tudo o que está dentro, então o bom fica ótimo; o ruim fica pior. O homem forte que conheceu o poder por toda a vida pode perder o respeito por esse poder, mas um homem fraco conhece o valor da força e conhece a compaixão.”</p> 
+    <p id="autor">-Abraham Erskine - 1945 - Marvel Comics</p>
+    <br>
+    <br>
+    <p>O soro do super soldado de Erskine teve que ser usado em combinação com a radiação vita para ter efeitos seguros e estáveis, então Steve Rogers foi simultaneamente injetado com o soro e bombardeado com os raios vita, porém com o tempo foi surgindo novas fórmulas diferentes de soros, no entanto, baseado na de Erskine, criando assim super soldados diferentes!</p>
+    </div>
+</div>
+
+
+
+<script>
+
+  $(document).ready(function() {
+ var botao = $('h2#titlesoro');   /////efeito de transição//////
+ var dropDown = $('div.dropdown');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+
+});
+</script>
+
+   <div class="conteiner-02" >
+    <h2 id="title02" >Diga qual super soldado adoraria ser!</h2>
+    <input id="escrever" type="text" class="escolha">
+  </div>
+
+  <button id="button" name="button" onclick="clique()" class="button">Visualizar</button>
+  
+</body>
+</html>

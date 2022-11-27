@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+  @font-face {
+    font-family: 'towerruins';
+    src: url(../fontes/towerruinscond.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'rai';
+    src: url(../fontes/RailwayToHells.ttf) format('truetype');
+  }
+
+
+  body {
+    display: flex; /*
+Flexbox é uma ferramenta do CSS3 que serve para dispor os elementos dentro de um determinado container em linhas ou colunas. É bastante flexível e permite que você arranje os elementos horizontal ou verticalmente, com ou sem espaços entre eles, de tamanhos iguais ou diferentes.*/
+    flex-direction: column; /* estilo da direção da direção do flex!*/
+    justify-content: center; /*é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction */
+    align-items: center; /*controla o alinhamento de todos os itens no eixo transversal. align-self — controla o alinhamento individual de um item no eixo transversal. align-content — descrito na especificação como “packing flex lines”; controla o espaço entre as linhas no eixo transversal*/
+    flex-wrap: wrap;/*define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas. Se o argumento for valido, ele define a direção em que as linhas são empilhadas.*/
+
+    overflow-y: auto; /* barra de rolagem vertical*/
+    overflow-x: hidden;/* barra de rolagem horizontal*/
+    width: 100%;
+
+  
+
+
+    
+
+    background-image: url(../fundos/fundo-branco.png);
+    background-size: 132em;
+    background-position-x: 50%;
+  }
+
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/*box-sizing: border-box; que indica que o tamanho agora levará em conta até a borda -- ou seja, o width será a soma do conteúdo com a borda e o padding.*/
+
+  }
+
+
+  .barrasuperior {
+height: 7em; 
+width: 100%;
+max-width: 100%;
+min-width: 23em;
+opacity: 90%;
+    
+background-image: url(../fundos/fundo-branco2.jpg);
+  }
+  h1#qual{
+color: rgba(255, 0, 0, 0.466);
+text-shadow: 0rem 0rem 1.5rem rgb(255, 0, 0);
+-webkit-text-stroke: 0.1rem rgb(150, 0, 0);
+font-weight: bolder;
+font-variant: small-caps;
+font-family: 'Oswald', sans-serif;
+font-size: 250%;
+opacity: 70%;
+
+margin-top: -2em;
+  }
+  .oque-seria{
+    color: rgb(104, 100, 100);
+    text-shadow: none;
+    padding: 0;
+  }
+
+
+
+
+.conteiner-01{
+margin-top: 10em;
+
+width: calc(50% + 13vh + 2vw);
+height: auto;}
+h2#titlesoro{
+cursor: pointer;
+color:rgb(255, 255, 255);
+background-color:rgba(39, 62, 83, 0.788);
+-webkit-text-stroke: 0.5rem rgba(0, 173, 253, 0.226);
+box-shadow: 0 0 1em rgb(39, 62, 83);
+border-radius: 0.5rem;
+padding: 5%;
+height: auto;
+
+  
+text-shadow: 0 0 1rem rgb(0, 0, 0);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial sans-serif;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+font-weight: 900;
+font-size: 2em;
+
+margin-bottom: 0.5em;
+
+transition: 1s;}
+#titlesoro:hover {
+background-color:rgba(39, 62, 83, 0.863);
+transition: 1s;}
+  
+.dropdown{
+    margin-top: -1.25em;
+
+    background-color:rgba(39, 62, 83, 0.548);
+    box-shadow: 0 3px 0.5rem rgba(36, 34, 34, 0.925);
+
+    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    z-index: -100;
+    display: none;}
+h3#sub-title01{
+padding: 1.5em;
+color:rgb(255, 255, 255);
+text-shadow: 0 0 1rem rgb(0, 0, 0);
+text-align: center;
+font-size: 1.25rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+margin-bottom: 1.5em;}
+p{
+padding: 1.5em;
+font-weight: bolder;
+color: rgb(0, 0, 0);
+text-shadow: 1px 1px 2rem rgb(0, 195, 255);
+-webkit-text-stroke: 0.1rem rgba(0, 140, 255, 0.329);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+p#coment{
+color: rgb(255, 255, 255);
+font-style: italic;
+text-shadow: 1px 1px 2rem rgb(255, 255, 255);
+-webkit-text-stroke: 0.1rem rgba(255, 255, 255, 0);
+text-align: center;}
+p#autor{
+margin-top: -3em;
+float: right;
+font-size: 0.75rem;
+color: rgb(255, 255, 255);
+font-style: italic;
+text-shadow: 1px 1px 2rem rgb(255, 255, 255);
+-webkit-text-stroke: 0.1rem rgba(255, 255, 255, 0);
+text-align: center;}
+
+
+
+
+.imagem{
+  margin-top: -1em;
+
+  width: auto;
+  height: auto;
+  }
+
+
+.imagem-01{
+    pointer-events: none;/* eventos sobre um elemento ou melhor imagens*/
+
+    width: 60em;
+    height: 7em;
+
+    max-width: 100%;
+    min-width: 20em;
+    max-height: 100%;
+    min-height: 7em;
+
+    margin-top: -15em;
+    
+   }
+
+
+h2#title02{
+     margin-top: 2em;
+
+    font-size: 2.75rem;
+    font-family: 'rai';
+
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.1rem rgb(2, 63, 104); 
+    text-shadow: 0px 0px 1rem rgb(255, 255, 255);/*contorno em volta do texto*/
+
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+
+
+
+    
+   }
+ 
+
+input#escrever{
+      cursor: pointer; /* estilo da seta ao clicar em algo*/
+      text-decoration: none; /*é usada para definir a formatação de underline , overline , line-through ou blink*/
+
+      color: rgba(255, 255, 255, 0.626);
+      font:bolder;
+      -webkit-text-stroke: 0.050rem rgba(255, 255, 255, 0.626); /*contorno em volta do texto*/
+      text-align:center;
+      font-size: 20pt;
+
+      width: 80%;
+      height: 5em;
+
+      border-radius: 5em;
+      border: none;
+      background-color: rgba(14, 89, 151, 0.801);
+      outline: none; /* contorno branco em volta da barra de pesquisa*/
+      box-shadow: 0px 0px 0 10px rgba(3, 59, 133, 0.774);
+
+      margin-left: 10%;
+      margin-top: 1em;
+      margin-bottom: 2em;
+
+      transition: 2s;
+    }
+#escrever:active {
+      box-shadow: 0 0 0 5px rgba(3, 59, 133, 0.774);
+      transition: 0.5s;
+    }
+#escrever:hover {
+      background-color: rgba(3, 60, 107, 0.801);
+      box-shadow: rgba(2, 34, 77, 0.774);
+    }
+
+button{
+      cursor: pointer;
+      font-weight:900;}
+.button{
+     display: inline-block;
+
+     margin: 1em;
+     padding: 1em 3em;
+
+     text-decoration: none;
+     color: #fff;
+     background-color: rgb(19, 98, 163);
+     border: 0;
+     text-shadow: 0px 0px 3px #000;
+     border-radius: 1em;
+     box-shadow: 3px 3px 0 1.5px rgb(3, 59, 104);
+     transition-duration: transform 0.01s;
+     -moz-transition: 0.5s;
+     -o-transition: 0.5s;
+     transition: 0.5s;} 
+.button:active {
+     box-shadow: 0 0 0 0 rgb(3, 56, 100), inset 3px 3px 3px rgb(3, 56, 100);
+     transform: translate(3px, 3px);
+    transition-duration: 0.1s;}
+.button:hover {
+      background-color: rgb(12, 72, 151);
+      text-shadow: 0 0 0.5rem #000;
+
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;}
+
+
+@media screen and (max-width: 1300px){
+
+      .conteiner-01{
+        width: calc(60% + 13vh + 2vw)
+      }
+      body{
+        background-size: 160em;
+        background-position-x: 49.5%;
+      }
+}
+@media screen and (max-width: 900px){
+
+    .conteiner-01{
+      width: calc(60% + 13vh + 2vw)
+    }
+    body{
+      background-size: auto;
+      background-position-x: 49.5%;
+    }
+}
+@media screen and (max-width: 680px){
+  h1#qual{
+    font-size: 200%;
+    margin-top: -2.5em;
+  }
+}
+@media screen and (max-width: 545px){
+    h1#qual{
+      font-size: 150%;
+      margin-top: -3em;
+    }
+}
+@media screen and (max-width: 415px){
+      h1#qual{
+        font-size: 120%;
+        margin-top: -3.5em;
+      }
+}
+@media screen and (max-width: 300px){
+        h1#qual{
+          font-size: 100%;
+          margin-top: -4em;
+        }
+}
+
+@media screen and (max-width: 300px){
+    body{
+      background-size: 208em;
+      background-position-x: 48%;
+      background-position-y: 97%;
+
+    }
+}

@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@575&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/*box-sizing: border-box; que indica que o tamanho agora levará em conta até a borda -- ou seja, o width será a soma do conteúdo com a borda e o padding.*/
+}
+
+
+body{
+    width: auto;
+    height: auto;
+    
+
+
+    overflow-y: auto;
+    overflow-x: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    background: rgb(34, 30, 30);
+
+    overflow-y: auto; /* barra de rolagem vertical*/
+    overflow-x: hidden;/* barra de rolagem horizontal*/
+}
+
+
+.barrasuperior {
+    opacity: 50%;
+ 
+    height: 7em; 
+    width: 100%;
+    max-width: auto;
+    min-width: 0em;
+
+    background-image: url(../fundos/fundorochoso-03.png);
+  }
+
+  
+input#button-voltar01{
+    position: absolute;
+    align-self:baseline;
+    
+
+    width: 14%;
+    height: 6%;
+    border-radius: 2em;
+    transition: 0.5s;
+
+    top: 1em;
+    left: 3%;
+
+    color: rgba(255, 0, 0, 0.466);
+    text-shadow: 0rem 0rem 1rem red;
+    font-family: 'Oswald', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    cursor:pointer;
+
+    background-image: url(../fundos/fundorochoso-02.jpeg);
+    border: groove 0.5em rgba(49, 49, 49, 0.295);
+    opacity: 50%;
+
+  }
+  #button-voltar01:hover {
+    color: rgba(255, 0, 0, 0.705);
+    text-shadow: 0em 1em 1em red;
+    box-shadow: 0 0 1em rgba(255, 0, 0, 0.39);
+    transition: 0.5s ease;
+  }
+
+
+.invernal_video{
+  position: absolute;
+  top: 0%;
+  
+  z-index: -100;
+
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  right: 1;
+
+  align-self: baseline;
+  }
+
+
+img#logoInver{
+    opacity: 50%;
+    margin-top: 8%;
+    margin-left: 53%;
+
+    pointer-events: none;
+    width: 40%;
+    height: auto;
+
+    max-width: 40%;
+    min-width: 20em;
+    max-height: auto;
+    min-height: auto;
+
+
+ 
+} 
+
+
+
+
+.divisao-01{
+  width: calc(40% + 13vh + 2vw);
+  height: auto;
+
+  padding: 1.5%;
+  margin: 6%;
+
+
+  margin-top: 10em;
+
+  border-radius: 1em;
+
+  background-color: rgba(126, 17, 17, 0.322);
+}
+.animation-01{
+  animation: Fundo1 5s  alternate-reverse infinite;
+}
+@keyframes Fundo1{
+  100% {box-shadow: 0rem 0rem 5rem rgb(126, 11, 11);}
+}
+h1#title01{
+text-align: center;
+
+
+color: rgb(143, 139, 143);
+text-shadow: 0 0 1rem rgb(0, 0, 0);
+-webkit-text-stroke: 0.5rem rgba(92, 90, 94, 0.301);
+
+font-weight: 800;
+font-style: oblique;
+font-family: 'Oswald', sans-serif;
+font-size: 1.80rem;
+}
+p#parag-01{
+text-align: justify;
+
+
+font-weight: bolder;
+font-style: italic;
+font-size: 1.25em;
+font-family: 'Kanit', sans-serif;
+color:rgb(133, 128, 128);
+text-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
+}
+
+
+
+.divisao-02{ 
+  width: calc(30% + 13vh + 2vw);
+  height: auto;
+  margin-left: 57%;
+  margin-top: -33.5em;
+
+  padding: 1.5%;
+  
+ 
+  border-radius: 1em;
+  
+  background-color: rgba(126, 17, 17, 0.322);
+}
+.animation-02{
+  animation: Fundo2 5s  alternate-reverse infinite;
+}
+@keyframes Fundo2{
+  100% {box-shadow: 0rem 0rem 5rem rgb(126, 11, 11);}
+}
+h1#title02{
+text-align: center;
+
+color: rgb(143, 139, 143);
+text-shadow: 0 0 1rem rgb(0, 0, 0);
+-webkit-text-stroke: 0.5rem rgba(92, 90, 94, 0.301);
+
+font-weight: 800;
+font-style: oblique;
+font-family: 'Oswald', sans-serif;
+font-size: 2.10rem;
+}
+p#parag-02{
+text-align: justify;
+
+font-weight: bolder;
+font-style: italic;
+font-size: 1.25em;
+font-family: 'Kanit', sans-serif;
+color:rgb(133, 128, 128);
+text-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
+
+}
+
+
+
+.divisao-03{
+  width: calc(40% + 13vh + 2vw);
+  height: auto;
+  
+  padding: 1.5%;
+  border-radius: 1em;
+
+  margin-left: 25%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+
+
+  background-color:  rgba(126, 17, 17, 0.322);
+}
+.animation-03{
+  animation: Fundo3 5s  alternate-reverse infinite;
+}
+@keyframes Fundo3{
+  100% {box-shadow: 0rem 0rem 5rem rgb(126, 11, 11);}
+}
+h1#title03{
+text-align: center;
+
+color:rgba(209, 21, 21, 0.521);
+text-shadow: 0 0 1rem rgb(160, 6, 6);
+text-align: center;
+
+
+font-family: 'Koulen', cursive;
+font-weight: 800;
+font-style: oblique;
+font-size: 2.10rem;
+}
+p#parag-03{
+  text-align: justify;
+
+font-weight: bolder;
+font-style: italic;
+font-size: 1.25em;
+font-family: 'Kanit', sans-serif;
+color:rgb(133, 128, 128);
+text-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
+}
+li{
+  font-weight: bold;
+    font-style: oblique;
+    font-family: 'Teko', sans-serif;
+
+    color: rgba(155, 22, 22, 0.908);
+    -webkit-text-stroke: 0.5rem rgba(0, 0, 0, 0.068);  
+    text-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.253);
+}
+
+
+.audiowinter{
+  align-self: center;
+  margin-bottom: 2%;
+  opacity: 5%;
+}
+
+
+   @media screen and (max-width: 1500px){
+    body{
+        justify-content: center;
+
+        align-items: center;
+    }
+    .invernal_video{
+      position: fixed;
+      width: 100%;
+    
+    }
+    input#button-voltar01{
+      position: absolute;
+
+      width: 14%;
+      height: 10%;
+      
+      top: 1em;
+      left: 3%;
+
+      font-size: 150%;
+
+      align-self:baseline;
+    }
+    img#logoInver{
+        align-self: baseline;
+        margin-left: 50%;
+        margin-top: 10%;
+        margin-left: 53%;
+    }
+
+    .divisao-02{
+        margin: 0%;
+
+        position: relative;  
+    }
+    .divisao-03{
+        margin-left: 1%;
+
+    }
+   
+} 
+   @media screen and (max-width: 1000px){
+    input#button-voltar01{
+      width: 14%;
+      height: 6%;
+
+      position: absolute;
+
+      bottom: -2.5em;
+
+      align-self:baseline;
+      left: 3%;
+    }
+    img#logoInver{
+        margin-top: 10%;
+        margin-left: 53%;
+    }
+
+    
+   }
+   @media screen and (max-width: 750px){
+    input#button-voltar01{
+      position: absolute;
+      width: 5em;
+      height: 6%;
+      left: 3%;
+      
+      
+      top: 0.5em;
+      align-self:baseline;
+      
+      font-size: 100%;
+    }
+    img#logoInver{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 3em;
+        margin-top: 2em;
+        align-self: center;
+       }
+       .divisao-03{
+        align-self:center;
+        margin-left: 1%;
+
+
+    }
+       .divisao-01{
+         margin-top: 10%;
+       }
+    .barrasuperior{
+        width: 100%;
+        height: 4em;
+        opacity: 20%;
+   
+        margin-top: 0%;
+        background: url(../fundos/fundorochoso-03.png);
+    }
+    .invernal_video{
+      position: fixed;
+      width: 100%;
+    
+    }
+   }
+   @media screen and (max-width: 320px){
+    body{
+    align-items: center;
+    }
+    .barrasuperior{
+        width: 100%;
+        margin-left: -15%;
+        max-width: 100%;
+        min-width: 20em;
+         
+        opacity: 35%;
+        background: url(../fundos/fundorochoso-03.png);
+
+    }
+    .invernal_video{
+        width: 150%;
+        margin-left: -4em;
+
+        position: fixed;
+        align-items: baseline;
+    }
+  
+   }
+
+   @media screen and (max-height: 1000px){
+    input#button-voltar01{
+      width: 5em;
+      height: 3em;
+      margin-bottom: -2.5em;
+    }
+   }

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<title>SuperTeste Error</title>
+<meta charset="utf-8">
+
+</head>
+<body>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../fundos/fundo-branco3.jpg);
+    }
+
+.carinha-triste{
+    font-size: 35em;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 1em;
+    transform: rotate(90deg);
+
+    text-shadow: 0 0 2rem rgb(0, 0, 0);
+    opacity: 50%;
+    color: rgba(0, 0, 0, 0.158);
+ 
+}
+
+#comment{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    margin-top: 50em;
+    position: absolute;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.329);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.733);
+    padding: 3%;
+    border-radius: 2em;
+}
+
+
+
+/* ///////////////////////// dropdown ////////////////////////// */
+
+
+.drop{
+margin: 0; 
+padding: 0;     
+position: absolute;
+margin-top: 105em;
+margin-bottom: 2em;}
+label{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+text-align: center;
+background-color: rgba(14, 72, 126, 0.5);
+border-top-left-radius: 1em;
+border-top-right-radius: 1em;}
+input{
+display: none;}
+
+.drop li{
+list-style: none;
+width: 20em;}
+
+label:hover{
+background-color: rgba(2, 37, 70, 0.822);
+transition: 1s all;}
+
+.drop a{
+text-decoration: none;
+color: white;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+.drop ul{
+background-color:rgb(46, 45, 45);
+border-bottom-left-radius: 10%;
+border-bottom-right-radius: 10%;}
+
+
+.drop a:hover{
+    background-color:rgb(24, 23, 23);
+    transition: 0.5s all;
+    border-left-color: rgb(104, 9, 9);
+    border-left-width: 1rem;
+    text-shadow: 0 0 20px rgb(255, 0, 0);}
+
+.drop li a, .drop li label{
+display:block;
+padding: 3%;
+border-left: 4px solid rgb(102, 128, 241);
+text-decoration: none;
+color: rgb(255, 255, 255);
+box-shadow: 0 0 5px rgb(0, 0, 0);
+cursor: pointer;}
+
+.drop li ul, .drop li input{
+display: none;}
+
+.drop li input:checked + ul{  
+display:block;}
+
+#testes{
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.75em;
+}
+
+/* ///////////////////////// dropdown ////////////////////////// */
+
+
+
+@media screen and (max-width: 1500px){
+    .carinha-triste{
+        margin-left: 12%;
+    }
+    .drop{
+        margin-top: 105em;
+        padding: 2em;
+
+    }
+}
+@media screen and (max-width: 1000px){
+    #comment{
+        font-size: 3em;
+        margin-top: 30em;
+    }
+    .drop{
+        margin-top: 180em;
+    
+    }
+    .drop li{
+    width: 50em;
+    }
+    .drop a{
+        font-size: 3em;
+
+    }
+     .drop label{
+
+        font-size: 3em;
+     }
+}
+
+
+
+</style>
+    <h1 class="carinha-triste">:(</h1>
+
+     <h2 id="comment">O nome que você digitou não existe, veja aqui os nomes dos personagens que estão cadastrados aqui!</h2>
+     
+           <ul class="drop">
+            <li> 
+              <label id="label" for="verific">Personagens</label>
+              <input id="verific" type="checkbox">
+             <ul> 
+              <li><a href="Capitão.html">Capitão América</a></li>
+              <li><a href="invernal.html">Soldado Invernal</a></li>
+              <li><a href="agente.html">Agente Americano</a></li>
+              <li><a href="bredley.html">Isaiah Bredley</a></li>
+              <li><a href="caveira.html">Caveira Vermelha</a></li>
+              <li><a id="testes" href="guardiaored.html">Guardião vermelho</a></li>
+            </ul>
+         </li>
+     </ul>
+</body>
+</html>

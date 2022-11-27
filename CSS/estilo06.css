@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@575&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+
+   *{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*box-sizing: border-box; que indica que o tamanho agora    levará em conta até a borda -- ou seja, o width será a soma do conteúdo com a borda e o padding.*/
+   
+    
+   }
+
+
+   body{
+    width: auto;
+    height: auto;
+    
+
+
+    overflow-y: auto;
+    overflow-x: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    background-color: rgb(207, 59, 40);
+
+    overflow-y: auto; /* barra de rolagem vertical*/
+    overflow-x: hidden;/* barra de rolagem horizontal*/
+   
+   }
+
+
+    input#button-voltar01{
+      position: absolute;
+      align-self:baseline;
+      
+
+      width: 14%;
+      height: 6%;
+      border-radius: 2em;
+      transition: 0.5s ease;
+
+      top: 1em;
+      left: 3%;
+
+      color: rgba(255, 0, 0, 0.466);
+      text-shadow: 0rem 0rem 1rem red;
+      font-family: 'Oswald', sans-serif;
+      font-size: 150%;
+      font-weight: bold;
+      cursor:pointer;
+
+      background-image: url(../fundos/fundorochoso-02.jpeg);
+      border: groove 0.5em rgba(49, 49, 49, 0.295);
+      opacity: 50%;
+    }
+    #button-voltar01:hover {
+      color: rgba(255, 0, 0, 0.705);
+      text-shadow: 0em 1em 1em red;
+      box-shadow: 0 0 1em rgba(255, 0, 0, 0.39);
+      transition: 0.5s ease;
+    }
+  
+
+
+   .barrasuperior {
+    opacity: 50%;
+
+
+    height: 7em; 
+    width: 100%;
+    max-width: 100%;
+    min-width: 0em;
+
+    background-image: url(../fundos/fundorochoso-03.png);
+  }
+
+
+  .guardiao_video{
+    position: absolute;
+    right: 1;
+    top: 0%;
+    width: 100%;
+    height: auto;
+    
+    
+    bottom: 0;
+    z-index: -100;
+    align-self: baseline;
+   }
+
+
+  .imagem{
+    margin-top: -1em;
+    margin-bottom: -5em;
+
+  width: auto;
+  height: auto;
+
+  justify-content: center;
+  align-self: center;
+  }
+
+
+   .imagem-01{
+    opacity: 20%;
+    pointer-events: none;/* eventos sobre um elemento ou melhor imagens*/
+
+    width: 60em;
+    height: 7em;
+
+    max-width: 100%;
+    min-width: 20em;
+    max-height: 100%;
+    min-height: 7em;
+
+    margin-top: -15em;
+    justify-content: center;
+    align-self: center;
+    
+   }
+
+
+   img#guardiaologo{
+    opacity: 50%;
+
+    pointer-events: none;
+    width: 40%;
+    height: auto;
+
+    max-width: 40%;
+    min-width: 20em;
+    max-height: auto;
+    min-height:  auto;
+   
+    padding: 2em;
+    margin: 1.5em;
+
+
+   
+   }
+
+   
+/*                  ////////////////////////////////////////////////////////////////                              */
+
+
+   .divisao-01{
+       width: calc(40% + 13vh + 2vw);
+       height: auto;
+
+       padding: 1.5%;
+       margin: 6%;
+
+       border-radius: 1em;
+
+       background-color: rgba(109, 29, 5, 0.342);
+   }
+   .animation-01{
+    animation: fadeIn1 5s  alternate-reverse infinite;
+   }
+   @keyframes fadeIn1{
+    100% {box-shadow: 0rem 0rem 5rem rgb(107, 5, 5);}
+   }
+   h1#title01{
+    text-align: center;
+
+    color:rgb(248, 100, 42);
+    text-shadow: 0rem 0rem 0.5rem rgba(114, 54, 5, 0.48);
+    -webkit-text-stroke: 0.5rem rgba(119, 52, 8, 0.301);
+
+    font-style: oblique;
+    font-family: 'Oswald', sans-serif;
+    font-size: 200%;
+   }
+   p#parag-01{
+       text-align:justify;
+
+       font-weight: bolder;
+       font-style: italic;
+       font-size: 1.25em;
+       font-family: 'Kanit', sans-serif;
+       color:rgba(255, 81, 0, 0.908);
+       -webkit-text-stroke: 0.5rem rgba(95, 3, 3, 0.075);  
+       text-shadow: 0rem 0rem 1rem rgba(53, 0, 0, 0.623);  
+   }
+
+
+/*                  ////////////////////////////////////////////////////////////////                              */
+
+
+   .divisao-02{
+   width: calc(30% + 13vh + 2vw);
+   height: auto;
+   margin-left: 57%;
+   margin-top: -26.75em;
+
+   padding: 1.5%;
+  
+   border-radius: 1em;
+  
+   background-color: rgba(109, 29, 5, 0.342);
+   }
+   .animation-02{
+    animation: fadeIn2 5s  alternate-reverse infinite;
+   }
+   @keyframes fadeIn2{
+    100% {box-shadow: 0rem 0rem 5rem rgb(107, 5, 5);}
+   }
+   h1#title02{
+    font-style: oblique;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.10rem;
+
+    text-align: center;
+
+    color:rgb(248, 100, 42);
+    text-shadow: 0rem 0rem 0.5rem rgba(114, 54, 5, 0.48);
+    -webkit-text-stroke: 0.5rem rgba(119, 52, 8, 0.301);
+   }
+   p#parag-02{
+    text-align:justify;
+
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: 'Kanit', sans-serif;
+
+    color:rgba(255, 81, 0, 0.908);
+       -webkit-text-stroke: 0.5rem rgba(95, 3, 3, 0.075);  
+       text-shadow: 0rem 0rem 1rem rgba(53, 0, 0, 0.623);  
+   }
+
+
+/*                  ////////////////////////////////////////////////////////////////                              */
+
+
+  .divisao-03{
+    width: calc(40% + 13vh + 2vw);
+    height: auto;
+    text-align:justify;
+
+
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+
+
+    padding: 1.5%;
+
+    border-radius: 1em;
+  
+    background-color: rgba(109, 29, 5, 0.342);
+  }
+  .animation-03{
+    animation: fadeIn3 5s  alternate-reverse infinite;
+  }
+  @keyframes fadeIn3{
+    100% {box-shadow: 0rem 0rem 5rem rgb(107, 5, 5);}
+  }
+   h1#title03{
+    text-align: center;
+
+    font-style: oblique;
+    font-family: 'Koulen', cursive;
+    font-size: 200%;
+
+    color:rgba(209, 21, 21, 0.521);
+    text-shadow: 0 0 1rem rgb(0, 0, 0);
+   }
+   p#parag-03{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 1.25em;
+    /*font-family: 'PT Sans Caption', sans-serif;*/
+    font-family: 'Kanit', sans-serif;
+
+    color:rgba(255, 81, 0, 0.908);
+       -webkit-text-stroke: 0.5rem rgba(95, 3, 3, 0.075);  
+       text-shadow: 0rem 0rem 1rem rgba(53, 0, 0, 0.623);  
+   }
+   li{
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Teko', sans-serif;
+
+    color: rgba(80, 5, 5, 0.908);
+    -webkit-text-stroke: 1rem rgba(83, 8, 8, 0.021);  
+    text-shadow: 0rem 0rem 1rem rgba(46, 2, 2, 0.492); 
+
+   }
+
+
+/*                  ////////////////////////////////////////////////////////////////                              */
+
+ .audioguardiao{
+  align-self: center;
+  margin-bottom: 2%;
+  opacity: 5%;
+
+ }
+
+
+
+   @media screen and (max-width: 1500px){
+    body{
+        justify-content: center;
+
+        align-items: center;
+    }
+    .guardiao_video{
+      position: fixed;
+      width: 100%;
+    
+    }
+    input#button-voltar01{
+      position: absolute;
+
+      width: 14%;
+      height: 10%;
+      
+      top: 1em;
+      left: 3%;
+
+      font-size: 150%;
+
+      align-self:baseline;
+    }
+    .divisao-02{
+        margin: 0%;
+
+
+        position: relative;      
+    }
+    .divisao-03{
+        margin-left: 1%;
+
+    }
+    img#guardiaologo{
+      opacity: 25%;
+    }
+} 
+   @media screen and (max-width: 1000px){
+    input#button-voltar01{
+      width: 14%;
+      height: 6%;
+
+      position: absolute;
+
+      bottom: -2.5em;
+      
+      align-self:baseline;
+      left: 3%;
+    }
+    
+   }
+   @media screen and (max-width: 750px){
+    input#button-voltar01{
+      position: absolute;
+      width: 5em;
+      height: 6%;
+      left: 3%;
+      
+      
+      top: 0.5em;
+      align-self:baseline;
+      
+      font-size: 100%;
+    }
+    img#guardiaologo{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 3em;
+        margin-top: 2em;
+        opacity: 50%;
+       }
+       .divisao-03{
+        align-self:center;
+        margin-left: 1%;
+
+
+    }
+    .barrasuperior{
+        width: 100%;
+        height: 4em;
+        opacity: 20%;
+   
+        margin-top: 0%;
+        background: url(../fundos/fundorochoso-022.png);
+    }
+    .guardiao_video{
+      position: fixed;
+      width: 100%;
+    
+    }
+   }
+   @media screen and (max-width: 320px){
+    body{
+    align-items: center;
+    }
+    .barrasuperior{
+        width: 100%;
+        margin-left: -15%;
+        max-width: 100%;
+        min-width: 20em;
+         
+        opacity: 35%;
+        background: url(../fundos/fundorochoso-03.png);
+
+    }
+    .guardiao_video{
+        width: 150%;
+        margin-left: -4em;
+
+        position: fixed;
+        align-items: baseline;
+    }
+  
+   }
+
+   @media screen and (max-height: 1000px){
+    input#button-voltar01{
+      width: 5em;
+      height: 3em;
+      margin-bottom: -2.5em;
+    }
+   }
